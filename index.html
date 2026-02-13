@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeLens - Python Explainer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      overflow: hidden;
+    }
+    .code-font {
+      font-family: 'Fira Code', monospace;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    /* Markdown Styles for Documentation Panel */
+    .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+      font-weight: 700;
+      color: #0f172a;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+    .markdown-body h1 { font-size: 1.5rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+    .markdown-body h2 { font-size: 1.25rem; border-bottom: 1px solid #f1f5f9; padding-bottom: 0.3rem; }
+    .markdown-body h3 { font-size: 1.1rem; }
+    
+    .markdown-body p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+      color: #334155;
+    }
+    .markdown-body ul, .markdown-body ol {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+    .markdown-body ul { list-style-type: disc; }
+    .markdown-body ol { list-style-type: decimal; }
+    .markdown-body li { margin-bottom: 0.4rem; color: #334155; }
+    
+    .markdown-body code {
+      font-family: 'Fira Code', monospace;
+      background-color: #f1f5f9;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+      font-size: 0.875em;
+      color: #4338ca;
+    }
+    .markdown-body pre {
+      background-color: #0f172a;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      margin-bottom: 1.2rem;
+      overflow-x: auto;
+    }
+    .markdown-body pre code {
+      background-color: transparent;
+      padding: 0;
+      color: #e2e8f0;
+      font-size: 0.85rem;
+    }
+    .markdown-body blockquote {
+      border-left: 4px solid #6366f1;
+      background-color: #f8fafc;
+      padding: 0.75rem 1rem;
+      color: #475569;
+      font-style: italic;
+      margin-bottom: 1.2rem;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+    .markdown-body strong { font-weight: 700; color: #0f172a; }
+    .markdown-body em { font-style: italic; }
+    .markdown-body a { color: #4f46e5; text-decoration: underline; text-underline-offset: 2px; }
+    .markdown-body hr { margin: 2rem 0; border: 0; border-top: 1px solid #e2e8f0; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "marked": "https://esm.sh/marked@12.0.0"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div id="root"></div>
+</body>
+</html>

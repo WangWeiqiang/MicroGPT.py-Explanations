@@ -1,0 +1,5 @@
+{
+  "name": "MicroGPT.py",
+  "description": "A high-performance code exploration tool that maps every line of source code to its detailed documentation, featuring smooth navigation and synchronized side-by-side viewing.",
+  "requestFramePermissions": []
+}
